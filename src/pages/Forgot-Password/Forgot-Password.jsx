@@ -5,8 +5,8 @@ import { useNavigate } from "react-router";
 const ForgotPassword = () => {
   const nav = useNavigate();
   return (
-    <div className="auth-container">
-      <form className="authForm-container">
+    <div className="authForgot-container">
+      <form className="authFormForgot-container">
         <div className="authTitle-container">
           <nav className="authLogo-container">
             <img

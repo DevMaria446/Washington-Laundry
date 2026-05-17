@@ -23,11 +23,31 @@ const Login = () => {
     const catchEmail = e.target.value;
     console.log(catchEmail);
     setUserInfo({ ...userInfo, email: catchEmail });
-    if (!emailRegex.test(catchEmail)) {
+    if (catchEmail.trim() === "") {
+      setErrMsg({
+        err: true,
+        name: "email",
+        msg: "Enter your email",
+      });
+    } else if (!emailRegex.test(catchEmail)) {
       setErrMsg({
         err: true,
         name: "email",
         msg: "Enter a valid email address",
+      });
+    } else {
+      setErrMsg({ err: false, name: "", msg: "" });
+    }
+  };
+  const handlePassword = (e) => {
+    const catchPassword = e.target.value;
+    console.log(catchPassword);
+    setUserInfo({ ...userInfo, password: catchPassword });
+    if (catchPassword.trim() === "") {
+      setErrMsg({
+        err: true,
+        name: "password",
+        msg: "Enter your password",
       });
     } else {
       setErrMsg({ err: false, name: "", msg: "" });
@@ -71,6 +91,7 @@ const Login = () => {
                 className="auth-input"
                 placeholder="Enter your password"
                 required
+                onChange={handlePassword}
               />
               <button
                 type="button"
@@ -80,6 +101,9 @@ const Login = () => {
                 {showPassword ? <FaRegEyeSlash /> : <FaRegEye />}
               </button>
             </div>
+            <span style={{ color: "red", fontFamily: "Arial" }}>
+              {errMsg.msg && errMsg.name === "password" ? errMsg.msg : ""}
+            </span>
             <div className="authCheck-container">
               <input type="checkbox" className="auth-check" />
               <span>Remember me</span>
