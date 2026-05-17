@@ -9,8 +9,8 @@ import ForgotPassword from "./pages/Forgot-Password/Forgot-Password";
 const AppRoutes = () => (
   <Router>
     <Routes>
-      <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/services" element={<Services />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/signup" element={<Signup />} />
