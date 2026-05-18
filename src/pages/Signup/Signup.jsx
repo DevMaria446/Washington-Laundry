@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-import React from "react";
-import "./Signup.css";
-=======
 import React, { useState } from "react";
 import "../Signup/signup.css";
 import { IoEye, IoEyeOff } from "react-icons/io5";
->>>>>>> 0226ea40280aeec2069f0c92acabff748a232f3f
 
 const Signup = () => {
   const [passWord, setPassWord] = useState(false);
@@ -67,17 +62,17 @@ const Signup = () => {
           </form>
         </div>
         <div className="teams">
-          <p  className="span-1">
-                  <input type="checkbox" />I agree to the{" "}
-                  <span className="p">terms and privacy</span>
-                </p>
-              <div className="bottom">
-                <button className="btn-1">Signup</button>
-              </div>
-              <span className="teams-1">
-                  Already have an account <span className="p">? Signin</span>
-                </span>
-            </div>
+          <p className="span-1">
+            <input type="checkbox" />I agree to the{" "}
+            <span className="p">terms and privacy</span>
+          </p>
+          <div className="bottom">
+            <button className="btn-1">Signup</button>
+          </div>
+          <span className="teams-1">
+            Already have an account <span className="p">? Signin</span>
+          </span>
+        </div>
       </section>
     </div>
   );
