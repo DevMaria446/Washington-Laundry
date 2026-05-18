@@ -6,7 +6,6 @@
   justify-content: center;
   background-color: var(--background-color);
   .authForm-container {
-    height: 70%;
     width: 30%;
     border: 2.3px solid var(--grey-color-tint-70);
     border-radius: 0.5rem;
@@ -44,7 +43,7 @@
         justify-content: center;
         color: var(--secondary-color-shade);
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 18px;
       }
     }
     .authmain-container {
@@ -160,7 +159,6 @@
 @media (max-width: 767px) {
   .auth-container {
     padding: 3rem 2rem;
-    height: 80%;
     .authForm-container {
       padding: 20px;
       border-radius: 12px;
