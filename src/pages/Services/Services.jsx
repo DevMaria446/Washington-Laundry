@@ -1,12 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./Services.css";
 
 const Services = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <main className="mainService-conatainer"></main>;
+};
 
-export default Services
-
+export default Services;

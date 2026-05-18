@@ -62,17 +62,17 @@ const Signup = () => {
           </form>
         </div>
         <div className="teams">
-          <p  className="span-1">
-                  <input type="checkbox" />I agree to the{" "}
-                  <span className="p">terms and privacy</span>
-                </p>
-              <div className="bottom">
-                <button className="btn-1">Signup</button>
-              </div>
-              <span className="teams-1">
-                  Already have an account <span className="p">? Signin</span>
-                </span>
-            </div>
+          <p className="span-1">
+            <input type="checkbox" />I agree to the{" "}
+            <span className="p">terms and privacy</span>
+          </p>
+          <div className="bottom">
+            <button className="btn-1">Signup</button>
+          </div>
+          <span className="teams-1">
+            Already have an account <span className="p">? Signin</span>
+          </span>
+        </div>
       </section>
     </div>
   );
