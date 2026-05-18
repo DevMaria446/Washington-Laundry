@@ -11,12 +11,12 @@ const AppRoutes = () => (
   <Router>
     <Routes>
       <Route path="*" element={<ErrorPage />} />
-      <Route path="/landing-page" element={<LandingPage />} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/services" element={<Services />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/" element={<ForgotPassword />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
     </Routes>
   </Router>
 );
