@@ -2,9 +2,11 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <div>
-      <button>Click Me</button>
+    <>
+    <div className='button-container'>
+      <button> Sign Up</button>
     </div>
+    </>
   )
 }
 
