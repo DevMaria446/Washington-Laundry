@@ -9,7 +9,9 @@
   --primary-color-shade: #146965;
   --primary-color-tone: #4dc1bb;
   --primary-color-tint: #f1fffe;
+  --primary-color-tint-cl: #eef9f9;
   --primary-color-tint-lighter: #effffe;
+  --primary-color-tint-lighter-bg: #f5fbfb;
 
   --secondary-color: #002422;
   --secondary-color-shade: #001d1b;
@@ -20,6 +22,7 @@
   --grey-color-tint-60: #a3a3a3;
   --grey-color-tint-70: #b9b9b9;
   --grey-color-tint-80: #dcdcdc;
+  --grey-color-tint-90: #f9f7f7fb;
 
   --background-color: #ffffff;
 
