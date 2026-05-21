@@ -6,6 +6,7 @@ import Services from "./pages/Services/Services";
 import Pricing from "./pages/Pricing/Pricing";
 import ForgotPassword from "./pages/Forgot-Password/Forgot-Password";
 import ErrorPage from "./components/Error-page/Error-Page";
+import BookingForm from "./components/BookingForm/BookingForm";
 
 const AppRoutes = () => (
   <Router>
@@ -17,6 +18,7 @@ const AppRoutes = () => (
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/BookingForm" element={<BookingForm />} />
     </Routes>
   </Router>
 );
