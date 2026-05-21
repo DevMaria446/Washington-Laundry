@@ -1,0 +1,21 @@
+.card3-container {
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+}
+.card3 {
+  width: 90%;
+  height: 100%;
+  background-color: aquamarine;
+  justify-content: center;
+  display: flex;
+    /* overflow: hidden; */
+  /* border-radius: 28px; */
+}
+.card3-image {
+  width:90%;
+  height: 100%;
+ /* object-fit: cover; */
+  /* object-fit: contain; */
+}
+
