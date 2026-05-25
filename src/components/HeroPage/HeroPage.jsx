@@ -39,7 +39,11 @@ const HeroPage = () => {
               </div>
             </div>
           </div>
-          <div className="hero-right"></div>
+          <div className="hero-right">
+            <div className="hero-right-wrapper" >
+            <img className="hero-right-image" src="/src/assets/woman.png" alt="image"/>
+            </div>
+          </div>
         </div>
       </div>
     </>

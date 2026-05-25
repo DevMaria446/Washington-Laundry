@@ -4,6 +4,8 @@ import Card3 from "../Card3/Card3";
 import Card4 from "../Card4/Card4";
 import img5 from "../../assets/card 1 .png";
 import img6 from "../../assets/card 2.png";
+import img7 from "../../assets/card4.png";
+import img8 from "../../assets/card4a.png";
 const HeroPage4 = () => {
   const card3 = [
     {
@@ -16,11 +18,19 @@ const HeroPage4 = () => {
     },
   ];
 
-  //   const card4 = [
-  //     {
-  //         id:3,
-  //     }
-  //   ]
+  const card4 = [
+    {
+      id: 3,
+      image: img7,
+    },
+  ];
+
+  const card4a = [
+    {
+      id: 3,
+      image: img8,
+    },
+  ];
   return (
     <>
       <div className="heroPage4-container">
@@ -58,12 +68,16 @@ const HeroPage4 = () => {
                   ))}
                 </div>
                 <div className="heroPage4-right-right-down">
-                  {/* {card4.map((i, idx) => ( */}
-                  <Card4 />
-                  {/* ))} */}
+                  {card4.map((i, idx) => (
+                    <Card4 image={i.image} key={idx} />
+                  ))}
                 </div>
               </div>
-              <div className="heroPage4-right-left"></div>
+              <div className="heroPage4-right-left">
+                {card4a.map((i, idx) => (
+                  <Card4 image={i.image} key={idx} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
