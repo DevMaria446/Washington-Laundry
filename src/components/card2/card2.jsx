@@ -91,7 +91,7 @@ const ServiceCard = (props) => {
       <main className="mainWrap-container">
         <article className="sectionWrap-container">
           {services?.map((data) => (
-            <div key={data} className={`wrap-container ${props.className}`}>
+            <div key={data.id} className={`wrap-container ${props.className}`}>
               <img src={data.img} alt="" />
               <section className="titleWrap-container">
                 <h2>{data.title}</h2>
@@ -102,7 +102,7 @@ const ServiceCard = (props) => {
         </article>
         <article className="sectionWrapMid-container">
           {servicesMid?.map((data) => (
-            <div key={data} className={`wrap-container ${props.className}`}>
+            <div key={data.id} className={`wrap-container ${props.className}`}>
               <img src={data.img} alt="" />
               <section className="titleWrap-container">
                 <h2>{data.title}</h2>
@@ -113,7 +113,7 @@ const ServiceCard = (props) => {
         </article>
         <article className="sectionWrapBot-container">
           {servicesBot?.map((data) => (
-            <div key={data} className={`wrap-container ${props.className}`}>
+            <div key={data.id} className={`wrap-container ${props.className}`}>
               <img src={data.img} alt="" />
               <section className="titleWrap-container">
                 <h2>{data.title}</h2>

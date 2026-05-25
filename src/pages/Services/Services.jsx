@@ -2,6 +2,7 @@ import React from "react";
 import "./Services.css";
 import Header from "../../components/header/header";
 import ServiceCard from "../../components/card2/card2";
+import Footer from "../../components/footer/footer";
 
 const Services = () => {
   const everydayItem = [
@@ -13,7 +14,40 @@ const Services = () => {
   const babyItem = [
     { id: 5, item: "Baby Clothes Bundles", price: "₦1,200" },
     { id: 6, item: "Baby Blanket", price: "₦1,500" },
-    { id: 7, item: "Baby Bedding", price: "₦1,800" },
+  ];
+  const faqQuestions = [
+    {
+      id: 1,
+      num: "01",
+      question: "How do I schedule a laundry pickup?",
+      sign: "+",
+    },
+    {
+      id: 2,
+      num: "02",
+      question: "How long does the laundry process take?",
+      sign: "+",
+    },
+    {
+      id: 3,
+      num: "03",
+      question: "Do you offer pickup and delivery?",
+      sign: "+",
+    },
+    {
+      id: 4,
+      num: "04",
+      question: "What types of clothes do you clean?",
+      sign: "+",
+    },
+    { id: 5, num: "05", question: "How are my clothes cleaned?", sign: "+" },
+    {
+      id: 6,
+      num: "06",
+      question: "What if my clothes have stains?",
+      sign: "+",
+    },
+    { id: 7, num: "07", question: "How do I pay for the service?", sign: "+" },
   ];
   return (
     <main className="mainService-conatainer">
@@ -35,7 +69,7 @@ const Services = () => {
               <thead>
                 <tr>
                   <th>Items</th>
-                  <th>Prices</th>
+                  <th className="leftBorder">Prices</th>
                 </tr>
               </thead>
               <tbody>
@@ -47,7 +81,7 @@ const Services = () => {
                 {everydayItem.map((item) => (
                   <tr className="mainRightBorder" key={item.id}>
                     <td className="rightBorder">{item.item}</td>
-                    <td>{item.price}</td>
+                    <td className="leftBorder">{item.price}</td>
                   </tr>
                 ))}
                 <tr className="category-row">
@@ -58,14 +92,42 @@ const Services = () => {
                 {babyItem.map((item) => (
                   <tr className="mainRightBorder" key={item.id}>
                     <td className="rightBorder">{item.item}</td>
-                    <td>{item.price}</td>
+                    <td className="leftBorder">{item.price}</td>
                   </tr>
                 ))}
+                <tr>
+                  <td className="">Baby Bedding</td>
+                  <td className="leftBorderDiv">
+                    <span>₦1,800</span>
+                    <button className="read-more">Read more</button>
+                  </td>
+                </tr>
               </tbody>
             </table>
-            <button className="read-more">Read more</button>
           </div>
         </section>
+
+        <section className="second-form">
+          <div className="second-form-input">
+            <p className="title">FAQ4</p>
+            <h4 className="Questions">Got Questions? We've Got Answers</h4>
+            <p className="laundry-Service">
+              Everything you need to know about our laundry Service <br /> from
+              pickup to delivery.
+            </p>
+          </div>
+          <aside className="secondFormInput-container">
+            {/* {" "} */}
+            {faqQuestions.map((faq) => (
+              <div key={faq.id} className="insideText-container">
+                <p className="num">{faq.num}</p>
+                <p className="midText">{faq.question}</p>
+                <button className="plus">{faq.sign}</button>
+              </div>
+            ))}
+          </aside>
+        </section>
+        <Footer />
       </div>
     </main>
   );
