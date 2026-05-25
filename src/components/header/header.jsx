@@ -7,7 +7,9 @@ const Header = () => {
       <header className="header-container">
         <div className="header-wrapper">
           <div className="header">
-            <div className="header-left"></div>
+            <div className="header-left">
+              <img className="header-left-image" src="/src/assets/LOGO.png" alt="logo"/>
+            </div>
             <div className="header-center">
               <p className="header-center-1"> Home</p>
               <p className="header-center-2"> Services</p>

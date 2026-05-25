@@ -1,21 +1,41 @@
+
+
 .card3-container {
   width: 50%;
   height: 100%;
-  background-color: blue;
+  display: flex;
 }
+
 .card3 {
   width: 90%;
   height: 100%;
-  background-color: aquamarine;
-  justify-content: center;
   display: flex;
-    /* overflow: hidden; */
-  /* border-radius: 28px; */
+  justify-content: center;
 }
+
 .card3-image {
-  width:90%;
+  width: 90%;
   height: 100%;
- /* object-fit: cover; */
-  /* object-fit: contain; */
 }
+
+/* 
+.card3-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.card3 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card3-image {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+} */
 
