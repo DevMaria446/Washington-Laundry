@@ -89,7 +89,7 @@ const Login = () => {
                 type={showPassword ? "text" : "password"}
                 name="password"
                 className="auth-input"
-                placeholder="Enter your password"
+                placeholder="enter your password"
                 required
                 onChange={handlePassword}
               />
@@ -104,14 +104,19 @@ const Login = () => {
             <span style={{ color: "red", fontFamily: "Arial" }}>
               {errMsg.msg && errMsg.name === "password" ? errMsg.msg : ""}
             </span>
-            <div className="authCheck-container">
-              <input type="checkbox" className="auth-check" />
+            <div className="authCheck-container1">
+              <input type="checkbox" className="auth-check1" />
               <span>Remember me</span>
+              <aside className="forgetHolder">
+                <span onClick={() => nav("/forgot-password")}>
+                  Forget Password
+                </span>
+              </aside>
             </div>
           </section>
         </main>
         <div className="authButton-container">
-          <button type="submit" className="auth-btn">
+          <button type="submit" className="auth-btn" onClick={() => nav("/")}>
             Sign in
           </button>
           <p>

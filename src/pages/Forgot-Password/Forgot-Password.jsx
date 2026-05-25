@@ -37,7 +37,7 @@ const ForgotPassword = () => {
           </button>
           <p>
             Remembered it?
-            <span onClick={() => nav("/Signup")}>Sign Up </span>
+            <span onClick={() => nav("/login")}>Signin </span>
           </p>
         </div>
       </form>

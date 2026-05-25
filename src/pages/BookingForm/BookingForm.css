@@ -1,8 +1,15 @@
+.mainBooking {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .Booking-from {
   width: 100%;
   height: 350vh;
   background: #f7f7f7;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
