@@ -1,6 +1,6 @@
 import React from "react";
+import header from "../../components/header/header";
 import "../BookingForm/BookingForm.css";
-import header from "../header/header";
 
 const BookingForm = () => {
   return (
