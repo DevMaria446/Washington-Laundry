@@ -1,6 +1,5 @@
 .auth-container {
   width: 100%;
-  min-height: 100vh;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -16,8 +15,9 @@
   justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 2rem 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  gap: 1rem;
 }
 
 .logo {
@@ -75,6 +75,9 @@
 .Input {
   width: 80%;
   height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   /* background: rgb(95, 245, 36);/ */
 }
 
@@ -90,7 +93,7 @@
 .Text-input {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
   color: #333;
   font-size: 15px;
 }
@@ -114,7 +117,7 @@ input:focus {
 .inputHolder {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.4rem;
 }
 
 .passWordInputHolder {
@@ -126,6 +129,7 @@ input:focus {
   align-items: center;
   padding: 0 12px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .passWordInputHolder .input {
@@ -155,7 +159,12 @@ input:focus {
 .span-1 {
   width: 100%;
   height: 20%;
+  margin-bottom: 5px;
   /* background-color: #e2a41f; */
+  .agreeCheck {
+    accent-color: var(--primary-color);
+    margin-right: 10px;
+  }
 }
 
 .p {
@@ -172,11 +181,12 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 
 .btn-1 {
   width: 100%;
-  height: 100%;
+  height: 70%;
   background: #00b5ad;
   color: white;
   font-size: 15px;
@@ -193,7 +203,7 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   gap: 5px;
   font-size: 14px;
 }

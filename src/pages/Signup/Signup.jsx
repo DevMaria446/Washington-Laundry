@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../Signup/signup.css";
 import { IoEye, IoEyeOff } from "react-icons/io5";
+import { useNavigate } from "react-router";
 
 const Signup = () => {
   const [passWord, setPassWord] = useState(false);
+  const nav = useNavigate();
 
   return (
     <div className="auth-container">
@@ -63,14 +65,19 @@ const Signup = () => {
         </div>
         <div className="teams">
           <p className="span-1">
-            <input type="checkbox" />I agree to the{" "}
+            <input className="agreeCheck" type="checkbox" />I agree to the{" "}
             <span className="p">terms and privacy</span>
           </p>
           <div className="bottom">
-            <button className="btn-1">Signup</button>
+            <button className="btn-1" onClick={() => nav("/login")}>
+              Signup
+            </button>
           </div>
           <span className="teams-1">
-            Already have an account <span className="p">? Signin</span>
+            Already have an account{" "}
+            <span className="p" onClick={() => nav("/login")}>
+              ? Signin
+            </span>
           </span>
         </div>
       </section>

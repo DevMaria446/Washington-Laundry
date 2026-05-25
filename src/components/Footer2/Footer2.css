@@ -1,12 +1,12 @@
 .footer2-container {
   display: flex;
   flex-direction: column;
-  /* background-color: var(--background-color); */
   color: var(--secondary-color);
   padding: 40px;
   font-family: Arial, sans-serif;
   width: 90%;
   padding-bottom: 4rem;
+  background-color: var(--grey-color-tint-0);
   .footer2Header-container {
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
   }
   .footer2-right-container {
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
     .footer2Main-container {
       max-width: 250px;
       margin-right: 2rem;
