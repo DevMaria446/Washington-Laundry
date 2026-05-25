@@ -62,7 +62,7 @@
 .number {
   width: 98%;
   height: 20%;
-  background: whitesmoke;
+  background: rgb(221, 44, 44);
   border-radius: 10px;
   border: none;
 }
