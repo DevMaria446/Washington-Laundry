@@ -131,7 +131,8 @@
       color: var(--primary-color);
     }
     .Questions {
-      font-size: 29px;
+      font-size: 30px;
+      width: 100%;
     }
     .laundry-Service {
       font-size: 18px;
