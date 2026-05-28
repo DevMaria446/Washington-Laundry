@@ -1,9 +1,10 @@
+import DetailPage from "../../components/DetailPagesFolders/DetailPage";
 import "./Order.css";
 
 const Order = () => {
   return (
     <div className="order-page">
-      <p className="order-placeholder">Order content goes here</p>
+      <DetailPage />
     </div>
   );
 };
