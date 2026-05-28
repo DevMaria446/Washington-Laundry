@@ -1,7 +1,9 @@
 import React from 'react'
 import "./Createorder.css"
+import {Link} from "react-router-dom"
 
 const Createorder = () => {
+
   return (
    <div className="order-container">
       <div className="order-modal">
@@ -77,9 +79,11 @@ const Createorder = () => {
           </div>
 
           {/* Button */}
-          <button type="submit" className="submit-btn">
-            Create Order
-          </button>
+          <Link to="/dashboard/orderdetails">
+            <button className="submit-btn" type="submit">
+              Create Order
+            </button>
+          </Link>
         </form>
       </div>
     </div>

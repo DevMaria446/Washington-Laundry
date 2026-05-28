@@ -4,6 +4,9 @@ import { FaAngleLeft, FaChevronRight } from "react-icons/fa6";
 import DataTable from "../../components/DataTable/DataTable";
 import StatusBadge from "../../components/StatusBadge/StatusBadge";
 import { useNavigate } from "react-router-dom";
+import { FiFilter } from "react-icons/fi";
+import { HiOutlineSwitchVertical } from "react-icons/hi";
+import { FiPlus } from "react-icons/fi";
 
 const Order = () => {
   const navigate = useNavigate();
@@ -101,11 +104,18 @@ const Order = () => {
           className="order-btn"
           onClick={() => navigate("/dashboard/createorder")}
         >
-          <span>+</span>Create order
+          <span className="order-btn-icon">
+            <FiPlus />
+          </span>
+          Create order
         </button>
-        <div className="Order-filters">
-          <button className="filter-btn">Filter by</button>
-          <button className="filter-btn">Sort by</button>
+        <div className="pickup-delivery-toolbar-left">
+          <button className="pickup-delivery-chip">
+            <FiFilter /> Filter by
+          </button>
+          <button className="pickup-delivery-chip">
+            <HiOutlineSwitchVertical /> Sort by
+          </button>
         </div>
       </div>
       <DataTable columns={columns} data={rows} getRowId={(row) => row.id} />
