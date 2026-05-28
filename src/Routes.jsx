@@ -17,7 +17,6 @@ import Settings from "./pages/Settings/Settings";
 const AppRoutes = () => (
   <Router>
     <Routes>
-      <Route path="*" element={<ErrorPage />} />
       <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/services" element={<Services />} />
