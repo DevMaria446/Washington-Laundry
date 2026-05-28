@@ -12,18 +12,6 @@ const Header1 = () => {
   return (
     <header className="Header-one">
       <section className="Header-main">
-        <div className="The-logo">
-          <h1 className="text">
-            <span className="img">
-              <img
-                className="image"
-                src="/src/assets/logo99.png"
-                alt="Washington Logo"
-              />
-            </span>
-            Washington
-          </h1>
-        </div>
         <div className="Search-bar">
           <div className="Search-input">
             <IoSearchOutline className="search-icon" />
@@ -42,7 +30,7 @@ const Header1 = () => {
           </div>
           <div className="id">
             <div className="profile">
-              <img className="jpeg"src="src/assets/id.jpeg" alt="" />
+              <img className="jpeg" src="src/assets/id.jpeg" alt="" />
             </div>
             <div className="profile-text">
               <h1 className="Emmaunella">Emmaunella</h1>
