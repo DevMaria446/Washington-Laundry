@@ -1,5 +1,6 @@
 .mainOrderContainer {
   width: 100%;
+  max-width: 1300px;
   background: #ffffff;
   border-radius: 16px;
   padding: 35px;
