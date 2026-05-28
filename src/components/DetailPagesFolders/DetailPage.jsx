@@ -47,7 +47,7 @@ const DetailPage = () => {
   };
 
   return (
-    <div className="mainOrderContainer">
+    <main className="mainOrderContainer">
       <div className="topOrderHeader">
         <div className="headerLeft">
           <h2>Order ID - #10425</h2>
@@ -56,7 +56,7 @@ const DetailPage = () => {
         <button className="closeBtn">✕</button>
       </div>
 
-      <div className="progressWrapper">
+      <aside className="progressWrapper">
         {progressData.map((item, index) => (
           <section key={index} className="progressSection">
             <div
@@ -76,7 +76,7 @@ const DetailPage = () => {
             )}
           </section>
         ))}
-      </div>
+      </aside>
 
       <div className="detailsGrid">
         {detailsData.map((item, index) => (
@@ -87,7 +87,7 @@ const DetailPage = () => {
         ))}
       </div>
 
-      <div className="orderSection">
+      <article className="orderSection">
         <h3>Order Items</h3>
         <div className="tableHeader">
           <span>Package Type</span>
@@ -99,9 +99,9 @@ const DetailPage = () => {
           <span>32kg</span>
           <span>79,900</span>
         </div>
-      </div>
+      </article>
 
-      <div className="bottomSection">
+      <section className="bottomSection">
         <button
           className="moveBackBtn"
           onClick={handleBack}
@@ -118,8 +118,8 @@ const DetailPage = () => {
             ? "Move to Next Stage"
             : "Move to Next Stage"}
         </button>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
