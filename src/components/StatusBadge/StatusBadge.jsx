@@ -1,9 +1,9 @@
 import "./StatusBadge.css";
 
 const StatusBadge = ({ status }) => {
-  const variant = status.toLowerCase().replace(/\s+/g, "-");
+  const variant = status ? status.toLowerCase().replace(/\s+/g, "-") : "N/A";
   return (
-    <span className={`status-badge status-${variant}`}>{status}</span>
+    <span className={`status-badge status-${variant}`}>{status || "N/A"}</span>
   );
 };
 

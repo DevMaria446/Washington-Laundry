@@ -8,6 +8,7 @@ const DataTable = ({
   selectable = true,
   showActions = true,
   onRowAction,
+  onRowClick,
 }) => {
   return (
     <div className="data-table-wrapper">
@@ -30,10 +31,18 @@ const DataTable = ({
         <tbody>
           {data.map((row, i) => {
             const rowId = getRowId ? getRowId(row) : i;
+            const clickable = typeof onRowClick === "function";
             return (
-              <tr key={rowId}>
+              <tr
+                key={rowId}
+                className={clickable ? "data-table-row-clickable" : ""}
+                onClick={clickable ? () => onRowClick(row) : undefined}
+              >
                 {selectable && (
-                  <td className="data-table-checkbox-col">
+                  <td
+                    className="data-table-checkbox-col"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <input type="checkbox" />
                   </td>
                 )}
@@ -43,7 +52,10 @@ const DataTable = ({
                   </td>
                 ))}
                 {showActions && (
-                  <td className="data-table-action-col">
+                  <td
+                    className="data-table-action-col"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <button
                       type="button"
                       className="data-table-action-btn"

@@ -10,7 +10,7 @@ import { TbBus } from "react-icons/tb";
 
 const Sidebar = ({ isOpen }) => {
   const menuItems = [
-    { path: "/dashboard", name: "Dashboard", icon: <MdDashboard /> },
+    { path: "/dashboard/dashboard", name: "Dashboard", icon: <MdDashboard /> },
     {
       path: "/dashboard/order",
       name: "Order",
