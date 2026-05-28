@@ -13,6 +13,7 @@ import Customers from "./pages/Customers/Customers";
 import PickupDelivery from "./pages/PickupDelivery/PickupDelivery";
 import Reports from "./pages/Reports/Reports";
 import Settings from "./pages/Settings/Settings";
+import Createorder from "./pages/Order/Create order/Createorder";
 
 const AppRoutes = () => (
   <Router>
@@ -30,6 +31,8 @@ const AppRoutes = () => (
         <Route path="pickup-delivery" element={<PickupDelivery />} />
         <Route path="reports" element={<Reports />} />
         <Route path="settings" element={<Settings />} />
+      <Route path="createorder" element={<Createorder />} />
+
       </Route>
     </Routes>
   </Router>

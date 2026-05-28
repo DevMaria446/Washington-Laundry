@@ -8,11 +8,11 @@ const DashboardHome = () => {
   { id: 2, orderId: "#10425", name: "Ada Oluchi", contact: "081234567889", status: "Scheduled", driver: "Gbemi" },
   { id: 3, orderId: "#10425", name: "Febechi Pascal", contact: "081234567889", status: "In Progress", driver: "Olisa" },
   { id: 4, orderId: "#10425", name: "Onye Grace", contact: "081234567889", status: "Completed", driver: "Nanu" },
-  { id: 5, orderId: "#10425", name: "Ogunsunya Micheal", contact: "081234567889", status: "Processing", driver: "Olisa" },
-  { id: 6, orderId: "#10425", name: "Onyim & Sons Law Firm", contact: "081234567889", status: "Completed", driver: "Nanu" },
-  { id: 7, orderId: "#10425", name: "Ebere Sunday", contact: "081234567889", status: "Cancelled", driver: "Gbemi" },
-  { id: 8, orderId: "#10425", name: "Oluchi Olisa", contact: "081234567889", status: "Completed", driver: "Gbemi" },
-  { id: 9, orderId: "#10425", name: "Pelumi Gbenga", contact: "081234567889", status: "Scheduled", driver: "Nanu" },
+  // { id: 5, orderId: "#10425", name: "Ogunsunya Micheal", contact: "081234567889", status: "Processing", driver: "Olisa" },
+  // { id: 6, orderId: "#10425", name: "Onyim & Sons Law Firm", contact: "081234567889", status: "Completed", driver: "Nanu" },
+  // { id: 7, orderId: "#10425", name: "Ebere Sunday", contact: "081234567889", status: "Cancelled", driver: "Gbemi" },
+  // { id: 8, orderId: "#10425", name: "Oluchi Olisa", contact: "081234567889", status: "Completed", driver: "Gbemi" },
+  // { id: 9, orderId: "#10425", name: "Pelumi Gbenga", contact: "081234567889", status: "Scheduled", driver: "Nanu" },
 ];
 
 const columns = [
@@ -107,7 +107,7 @@ const columns = [
             </div>
           </div>
           <div className="Text-number-1">
-            N968,900{" "}
+            ₦968,900{" "}
             <span className="Text-percentage-1">
               <img
                 className="Percentage-Icon"
