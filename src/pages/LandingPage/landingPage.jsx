@@ -7,6 +7,7 @@ import HeroPage2 from "../../components/HeroPage2/HeroPage2";
 import HeroPage3 from "../../components/HeroPage3/HeroPage3";
 import HeroPage4 from "../../components/HeroPage4/HeroPage4";
 import HeroPage5 from "../../components/HeroPage5/HeroPage5";
+import Footer from '../../components/footer/footer'
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <HeroPage3 />
       <HeroPage4 />
       <HeroPage5 />
+      <Footer/>
     </>
   );
 };
