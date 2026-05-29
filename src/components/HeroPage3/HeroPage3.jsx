@@ -19,7 +19,8 @@ const HeroPage3 = () => {
                 <div className="heroPage3-right-up">
                   <p className="heroPage3-right-up-p"> Why Choose Us?</p>
                   <article className="heroPage3-right-up-h2">
-                    Why Customers Love Our Laundry Services{" "}
+                    Why Customers Love <br />
+                    Our Laundry Services{" "}
                   </article>
                 </div>
                 <div className="heroPage3-right-center">

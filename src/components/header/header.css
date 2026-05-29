@@ -121,7 +121,7 @@
 
 .header-right-2:hover {
   background: #20b2aa;
-  color: #002422;
+  color: #93a6a5;
   transform: translateY(-2px);
 }
 
@@ -177,7 +177,6 @@
 
   .header-center {
     gap: 1.2rem;
-    
   }
 
   .header-center-1,
@@ -230,7 +229,7 @@
 .header-link {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: rgb(143, 189, 188);
   font-size: 16px;
   cursor: pointer;
   padding-bottom: 6px;
@@ -242,7 +241,6 @@
 }
 .active-link::before {
   color: #effaf9;
-
 }
 .active-link::after {
   content: "";
