@@ -24,7 +24,7 @@ const mainNav = [
 ];
 
 const accountNav = [
-  { label: "Log out", icon: <FiLogOut />, path: "/login" },
+  { label: "Log out", icon: <FiLogOut />, path: "/" },
   { label: "Register", icon: <FiUserPlus />, path: "/signup" },
 ];
 
