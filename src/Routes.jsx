@@ -15,6 +15,7 @@ import Settings from "./pages/Settings/Settings";
 import Createorder from "./pages/Order/Create order/Createorder";
 import DetailPage from "./components/DetailPagesFolders/DetailPage";
 import DashboardHome from "./pages/DashboardHome/DashboardHome";
+import CustomerDetails from "./pages/CustomerDetails/CustomerDetails";
 // import Payment from "./components/Payment/Payment";
 import Code from "./pages/Code/Code";
 
@@ -37,6 +38,7 @@ const AppRoutes = () => (
 
         <Route path="order" element={<Order />} />
         <Route path="customers" element={<Customers />} />
+        <Route path="customers/:id" element={<CustomerDetails />} />
         <Route path="pickup-delivery" element={<PickupDelivery />} />
         <Route path="reports" element={<Reports />} />
         <Route path="settings" element={<Settings />} />

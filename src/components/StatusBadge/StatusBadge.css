@@ -31,10 +31,10 @@
 
 .status-ready {
   background-color: #d6f5e0;
-  color: #1d8a4a;
+  color: #7a36c9;
 }
 
-.status-completed {
+.status-delivered {
   background-color: #d6f5e0;
   color: #1d8a4a;
 }
@@ -42,4 +42,14 @@
 .status-cancelled {
   background-color: #ffd9d9;
   color: #c0322d;
+}
+
+.status-active {
+  background-color: #d6f5e0;
+  color: #1d8a4a;
+}
+
+.status-inactive {
+  background-color: #e8eceb;
+  color: #6b7280;
 }

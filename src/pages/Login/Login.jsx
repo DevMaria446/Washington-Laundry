@@ -97,9 +97,12 @@ const Login = () => {
       try {
         const res = await axios.post(API_URL, userInfo);
 
-        console.log("Login Success", res.data);
+        const { ...adminData } = res.data.admin;
 
-        nav("/");
+        localStorage.setItem("token", res.data.token);
+        localStorage.setItem("admin", JSON.stringify(adminData));
+
+        nav("/dashboard");
       } catch (error) {
         console.error("Login failed:", error);
 

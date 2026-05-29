@@ -40,6 +40,10 @@
   background-color: #fafcfc;
 }
 
+.data-table-row-clickable {
+  cursor: pointer;
+}
+
 .data-table-checkbox-col {
   width: 40px;
   text-align: center;
