@@ -22,7 +22,10 @@
 
 .hero-left-wrapper {
   width: 85%;
-  height: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
   /* background-color: pink; */
 }
 
@@ -36,7 +39,7 @@
 }
 
 .hero-left-up-h3 {
-  font-size: 60px;
+  font-size: 65px;
   font-family: Arial, Helvetica;
 }
 
@@ -59,38 +62,44 @@
   gap: 0.5rem;
 }
 .hero-left-center1-p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .hero-left-center1-down {
   /* background-color: yellowgreen; */
   width: 100%;
   height: 50%;
+  position: relative;
+  z-index: 0;
+  display: flex;
 }
 .hero-left-center1-email {
   width: 60%;
   height: 85%;
   padding: 10px;
-  font-size: 18px;
+  padding-right: 2rem;
+  font-size: 15px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   /* cursor: pointer; */
-  border: none;
   border: 1px solid #20b2aa;
   outline: none;
 }
 
 .hero-left-center1-btn {
   width: 10%;
-  height: 88%;
-  font-size: 19px;
+  height: 85%;
+  font-size: 15px;
   color: #f0fffe;
   /* background-color: red; */
   background-color: #20b2aa;
   border: none;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
+  border-radius: 0.6rem;
   cursor: pointer;
+  position: absolute;
+  left: 57%;
 }
 .hero-left-down {
   width: 100%;
@@ -114,7 +123,7 @@
 }
 .hero-right {
   width: 50%;
-  height: 80%;
+  height: 100%;
   /* background-color: blueviolet; */
   display: flex;
   justify-content: start;
@@ -126,9 +135,9 @@
   /* background-color: red; */
   display: flex;
   justify-content: start;
-  /* align-items: end; */
+  align-items: center;
 }
 .hero-right-image {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }

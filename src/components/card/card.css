@@ -29,16 +29,17 @@
 
 .card-up-image {
   /* background-color: aquamarine; */
-  width:10%;
-height:50px
+  width: 10%;
+  height: 50px;
 }
 .card-down {
-  width: 100%;
+  width: 93%;
   height: 65%;
   /* background-color: silver; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-left: 10px;
 }
 
 .card-down-h2 {
