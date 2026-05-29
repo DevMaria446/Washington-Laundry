@@ -52,7 +52,7 @@ const ForgotPassword = () => {
       console.log("Reset Link Sent");
       axios.post(API_URL, { email });
 
-      nav("/login");
+      nav("/Code");
     }
   };
 
@@ -100,7 +100,7 @@ const ForgotPassword = () => {
 
           <p>
             Remembered it?
-            <span onClick={() => nav("/login")}>Signin</span>
+            <span onClick={() => nav("/Code")}>Signin</span>
           </p>
         </div>
       </form>

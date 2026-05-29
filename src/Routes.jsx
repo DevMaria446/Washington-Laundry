@@ -17,6 +17,7 @@ import DetailPage from "./components/DetailPagesFolders/DetailPage";
 import DashboardHome from "./pages/DashboardHome/DashboardHome";
 import CustomerDetails from "./pages/CustomerDetails/CustomerDetails";
 // import Payment from "./components/Payment/Payment";
+import Code from "./pages/Code/Code";
 
 const AppRoutes = () => (
   <Router>
@@ -30,6 +31,7 @@ const AppRoutes = () => (
       <Route path="/booking-form" element={<BookingForm />} />
         {/* <Route path="payment" element={<Payment />} /> */}
       <Route path="/DetailPage" element={<DetailPage />} />
+      <Route path="/Code" element={<Code />} />
       {/* Dashboard Routes */}
       <Route path="/dashboard" element={<Dashboard />}>
         <Route index element={<DashboardHome />} />
