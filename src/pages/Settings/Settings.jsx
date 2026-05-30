@@ -153,7 +153,6 @@ const Settings = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // UPDATE PASSWORD
   const handleUpdatePassword = () => {
     if (validatePassword()) {
       console.log("Update Password:", formData);
@@ -161,8 +160,6 @@ const Settings = () => {
       alert("Password Updated Successfully");
     }
   };
-
-  // SAVE SETTINGS
   const handleSaveChanges = () => {
     if (validateBusinessInfo()) {
       console.log("Save Changes:", formData, notifications);
@@ -174,7 +171,6 @@ const Settings = () => {
   return (
     <main className="settings-page">
       <div className="settingsContainer">
-        {/* BUSINESS INFO */}
         <div className="settingsCard">
           <div className="cardHeader">
             <h3>Business Information</h3>
@@ -198,8 +194,6 @@ const Settings = () => {
             ))}
           </div>
         </div>
-
-        {/* NOTIFICATIONS */}
         <div className="settingsCard">
           <div className="cardHeader">
             <h3>Notification Preferences</h3>
@@ -228,8 +222,6 @@ const Settings = () => {
             ))}
           </div>
         </div>
-
-        {/* PASSWORD */}
         <div className="settingsCard">
           <div className="cardHeader">
             <h3>Change Password</h3>
@@ -270,8 +262,6 @@ const Settings = () => {
             </button>
           </div>
         </div>
-
-        {/* SAVE BUTTON */}
         <button className="saveChangesBtn" onClick={handleSaveChanges}>
           Save Changes
         </button>

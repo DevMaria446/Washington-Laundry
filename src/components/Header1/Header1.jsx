@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./Header1.css";
 import { IoSearchOutline } from "react-icons/io5";
 import { FaRegBell } from "react-icons/fa";
+import { navigation } from "react-router-dom";
 
 const Header1 = () => {
+  const nav = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -25,7 +27,7 @@ const Header1 = () => {
           </div>
         </div>
         <div className="id-icone">
-          <div className="bell">
+          <div className="bell" onClick={() => nav("/settings")}>
             <FaRegBell />
           </div>
           <div className="id">

@@ -15,7 +15,9 @@ const BookingForm = () => {
             <div className="Booking">
               <h1>Booking from</h1>
               <p className="schedule-up">
-                <span className="schedule-up1">Schedule your laundry pickup</span>
+                <span className="schedule-up1">
+                  Schedule your laundry pickup
+                </span>
                 <span className="schedule-down">
                   we'll take care of the rest
                 </span>
@@ -239,4 +241,4 @@ const BookingForm = () => {
   );
 };
 
-export default BookingForm; 
+export default BookingForm;
